@@ -2,29 +2,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   background-image: url("imgs/iglesia.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: local;
-  background-size: 100vw 100vh;
+  background-position: center;
+}
+.d-list ul li {
+  font-size: 24px;
 }
 .d-list ul li a {
   transition: transform 0.3s ease;
+  font-size: 30px;
 }
+
 
 .d-list ul li a:hover {
   transform: translateX(5px);
+  color: rgb(207, 180, 58);
 }
 .title {
   /* center */
+  text-align: center;
+   font-size: 60px;
+   margin-bottom: 20px;
   position: relative;
-  margin-left: 10%;
+
 }
+
 
 h1 {
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 55px;
   line-height: 40px;
+  text-align: center;
   color: #fff8e8;
 }
 .d-list {
