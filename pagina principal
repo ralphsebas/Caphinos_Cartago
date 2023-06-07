@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Orden de hermanos menores Capuchinos</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Orden de Hermanos Menores Capuchinos <br />Cartago, Costa Rica</h1>
+    </div>
+    <div class="d-image">
+      <img class="escritos" src="imgs/escritos.png" alt="" srcset="">
+    </div>
+    <div class="d-list">
+      <ul>
+        <!-- cambiar los href para el link correcto -->
+        <li><a href="http://www.youtube.com/"> La reforma Capuchina </a></li>
+        <li><a href="http://www.youtube.com/"> El convento de cartago </a></li>
+        <li>
+          <a href="http://www.youtube.com/"> Los capuchinos en Costa Rica </a>
+        </li>
+        <li><a href="http://www.youtube.com/"> Los frailes hoy... </a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background-image: url("imgs/iglesia.png");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 100vw 100vh;
+}
+.d-list ul li a {
+  transition: transform 0.3s ease;
+}
+
+.d-list ul li a:hover {
+  transform: translateX(5px);
+}
+.title {
+  /* center */
+  position: relative;
+  margin-left: 10%;
+}
+
+h1 {
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff8e8;
+}
+.d-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin-left: -10%;
+}
+
+.d-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  background-color: #865d0f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.d-list li a {
+	width: 100%;
+	text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff8e8;
+  text-decoration: none;
+	padding: 5px 15px;
+}
+
+.d-image{
+	/* fixed image to left */
+	position: relative;
+	left: -10%;
+}
+
+.d-image img{
+	position: absolute;
+	width: 500px;
+	height: auto;
+	z-index: -10;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.title {
+		margin-left: 0;
+	}
+  .d-image img {
+    display: none;
+  }
+	.d-list li a {
+		font-size: 16px;
+
+	}
+}
+
+@media all and (width: 768px) and (height: 1024px) and (orientation:landscape){
+  .d-image img {
+    display: none;
+  }
+}
